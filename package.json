@@ -1,0 +1,29 @@
+{
+    "name": "dummy-crm",
+    "version": "1.0.0",
+    "author": "NerdSamurai <inshal2025@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "tsx --watch src/app.ts",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate",
+        "db:studio": "drizzle-kit studio --verbose"
+    },
+    "dependencies": {
+        "@neondatabase/serverless": "^0.9.5",
+        "dotenv": "^16.4.5",
+        "drizzle-orm": "^0.33.0",
+        "express": "^4.21.0",
+        "swagger-ui-express": "^5.0.1",
+        "tsoa": "^6.4.0",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.0",
+        "@types/swagger-ui-express": "^4.1.6",
+        "concurrently": "^9.0.1",
+        "drizzle-kit": "^0.24.2",
+        "tsx": "^4.19.1",
+        "typescript": "^5.6.2"
+    }
+}
